@@ -1099,6 +1099,19 @@ body {
     display: block;
   }
 }
+@media (min-width: 1400px) {
+  .header-fixed .header-top-panel .soc-wrap {
+    padding: 0;
+    position: fixed;
+    top: 45px;
+    right: 390px;
+    margin-top: -12px;
+    z-index: 10;
+  }
+  .header-fixed .popup-menu-wrap .menu {
+    padding-right: 80px;
+  }
+}
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
