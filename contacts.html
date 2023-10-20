@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/slick.min.js" defer></script>
+    <script src="./js/jquery.swipebox.min.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+
+        <!-- header -->
+        <header class="header">
+            <!--header-top-panel-->
+            <div class="header-top-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="location-wrap">
+                        <div class="header-info">
+                            <div class="elm-ico">
+                                <img src="./img/icons/point.svg" alt="">
+                            </div>
+                            <div class="info-title">г.&nbsp;Москва, Троилинский переулок д.3, офис&nbsp;408</div>
+                        </div>
+                    </div>
+                    <div class="contacts-wrap">
+                        <div class="phones-wrap">
+                            <div class="phone-wrap phone-mobile">
+                                <a href="tel:84953749465" class="header-info link-phone">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/phone.svg" alt="">
+                                    </div>
+                                    <div class="info-title">+7(495) <b>374-94-65</b></div>
+                                </a>
+                            </div>
+                            <div class="phone-wrap">
+                                <a href="tel:84957711028" class="header-info link-phone">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/phone.svg" alt="">
+                                    </div>
+                                    <div class="info-title">+7(495) <b>771-10-28</b></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="email-wrap">
+                            <a href="mailto:arbattur@yandex.ru" class="header-info link-email">
+                                <div class="elm-ico">
+                                    <img src="./img/icons/mail.svg" alt="">
+                                </div>
+                                <div class="info-title">arbattur@yandex.ru</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search-wrap js-popup-wrap">
+                        <a href="" class="btn-popup-toggle btn-action-ico ico-search js-btn-popup-toggle"></a>
+                        <div class="popup-content-block js-popup-block">
+                            <form action="/" class="frm-main-search">
+                                <input type="text" class="form-input" placeholder="Какой тур вас интересует">
+                                <button type="submit" class="btn-action-ico ico-search"></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="soc-wrap">
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc-tg.svg" alt="">
+                        </a>
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc-wa.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--/header-top-panel-->
+            <!--header-main-panel-->
+            <div class="header-main-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <span class="logo-title">Арбат-Тур</span>
+                            <span class="logo-text">туристическая компания</span>
+                        </a>
+                    </div>
+                    <div class="popup-menu-wrap js-popup-wrap">
+                        <a href="" class="btn-popup-toggle btn-action-ico ico-menu js-btn-popup-toggle"></a>
+                        <div class="popup-content-block js-popup-block">
+                            <div class="menu-wrap">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="">Автобусные туры</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Золотое кольцо</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Байкал</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Адыгея</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="phones-wrap">
+                                <div class="phone-wrap">
+                                    <a href="tel:84953749465" class="link-phone">+7(495) <b>374-94-65</b></a>
+                                </div>
+                                <div class="phone-wrap">
+                                    <a href="tel:84957711028" class="link-phone">+7(495) <b>771-10-28</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/header-main-panel-->
+        </header>
+        <!-- /header -->
+
+        <!--main-filter-box-->
+        <div class="main-filter-box cnt-section">
+            <div class="inner-wrap">
+                <form action="/" class="form-inner-wrap">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-title">Выберите кол-во дней</div>
+                            <div class="frm-field-ico">
+                                <div class="frm-ico">
+                                    <img src="./img/icons/calendar-search.svg" alt="">
+                                </div>
+                                <input type="text" class="form-input" placeholder="">
+                            </div>
+                        </div>
+                        <div class="frm-field">
+                            <div class="frm-field-title">Выберите дату выезда</div>
+                            <div class="frm-field-ico">
+                                <div class="frm-ico">
+                                    <img src="./img/icons/calendar.svg" alt="">
+                                </div>
+                                <input type="text" class="form-input" placeholder="">
+                            </div>
+                        </div>
+                        <div class="frm-field field-main">
+                            <div class="frm-field-title">Выберите город </div>
+                            <select class="form-input">
+                                <option>Санкт-Петербург</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Санкт-Петербург</option>
+                            </select>
+                        </div>
+                        <div class="frm-field field-button">
+                            <button type="submit" class="btn">
+                                <span class="button-title">Поиск тура</span>
+                                <span class="button-ico">
+                                    <img src="./img/icons/arrow-button.svg" alt="">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--/main-filter-box-->
+
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--breadcrumbs-box-->
+            <div class="breadcrumbs-box">
+                <ol class="menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ol>
+            </div>
+            <!--/breadcrumbs-box-->
+
+            <!--info-top-box-->
+            <div class="info-top-box section-contacts">
+                <div class="info-inner-wrap">
+                    <div class="title-inner-wrap">
+                        <h1 class="h1-title">Контактная информация Арбат-тур</h1>
+                    </div>
+                    <div class="info-sections-wrap">
+                        <div class="info-section-wrap">
+                            <p>Номер в Едином Федеральном Реестре Турагентов № РТА 0001456</p>
+                            <p>Номер в Реестре Туристических агентств Федерального Агентства по туризму № 12749</p>
+                        </div>
+                        <div class="info-section-wrap">
+                            <div class="info-section-title title-phone">
+                                <div class="elm-ico">
+                                    <img src="./img/icons/phones.svg" alt="">
+                                </div>
+                                <div class="title-inner"><b><a href="84953749465" class="link-phone">+7(495) 374-94-65</a>, <a href="84957711028" class="link-phone">+7 (495) 771-10-28</a></b></div>
+                            </div>
+                            <div class="info-section-title title-shedule">
+                                <div class="elm-ico">
+                                    <img src="./img/icons/time.svg" alt="">
+                                </div>
+                                <div class="title-inner"><b>Режим работы:</b></div>
+                                <div class="title-value">
+                                    Понедельник – Пятница с 10-00 до 19-00 <br>
+                                    Суббота c 11-00 до 16-00 <br>
+                                    Воскресенье работа в дежурном режиме
+                                </div>
+                            </div>
+                            <div class="info-section-title">
+                                <a href="mailto:arbattur@yandex.ru">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/email.svg" alt="">
+                                    </div>
+                                    arbattur@yandex.ru
+                                </a>
+                            </div>
+                            <div class="info-section-title">
+                                <div class="elm-ico">
+                                    <img src="./img/icons/location.svg" alt="">
+                                </div>
+                                <b>Адрес офиса:</b> г. Москва, Троилинский переулок д.3, 4 этаж, офис 408
+                            </div>
+                        </div>
+                        <div class="info-action-wrap">
+                            <a href="" class="btn">
+                                <span class="button-title">Забронировать тур</span>
+                                <span class="button-ico">
+                                    <img src="./img/icons/arrow-button.svg" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="photo-inner-wrap">
+                    <div class="elm-photo">
+                        <img src="./img/top-contacts.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--/info-top-box-->
+
+            <!--route-box-->
+            <div class="route-box">
+                <div class="title-box title-center">
+                    <h2 class="h1-title">Как доехать до офиса</h2>
+                </div>
+                <div class="box-inner-wrap">
+                    <div class="info-inner-wrap">
+                        <ol>
+                            <li>
+                                <p><b>На метро от станции метро Смоленская </b> <br>(Арбатско-Покровская линия, «синяя ветка»).</p>
+                                <ul>
+                                    <li>При выходе из метро справа находится 5-и этажное здание со стеклянным лифтом. Пройдите в арку слева от здания.</li>
+                                    <li>Выйти из арки в Троилинский переулок и справа будет вход в здание.</li>
+                                    <li>Подняться на лифте на 4-й этаж, после выхода из лифта спуститься вниз к металлической двери вывеска "Арбат-тур".</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><b>Как пройти от станции метро Смоленская</b> <br>(Филевская линия, «голубая ветка»).</p>
+                                <ul>
+                                    <li>При выходе из метро спускайтесь в подземный переход.</li>
+                                    <li>При выходе из перехода идите налево до арки.</li>
+                                    <li>Далее пройти в арку слева от метро Смоленская.</li>
+                                    <li>Выйти из арки в Троилинский переулок и справа будет вход в здание.</li>
+                                    <li>Подняться на лифте на 4-й этаж, после выхода из лифта спуститься вниз к металлической двери вывеска "Арбат-тур".</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><b>Как добраться на автомобиле.</b></p>
+                                <ul>
+                                    <li>Наш офис находится между улицей Арбат (Старый Арбат) и Карманицким переулком.</li>
+                                    <li>Если Вы движетесь по Садовому кольцу от здания МИД, можно припарковаться возле МИД или повернуть налево перед улицей Арбат (Старый Арбат) в Троилинский переулок или Карманицкий переулок (парковка платная).</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="map-inner-wrap">
+                        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eov8YMYfEHTrqs_Q1kKzkBJYs6HKSuT&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
+                    </div>
+                </div>
+                <div class="slider-outer-wrap">
+                    <div class="slider-wrap">
+                        <div class="slider">
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt01.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt01.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt02.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt02.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt03.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt03.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt04.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt04.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt05.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt05.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt01.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt01.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt02.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt02.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt03.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt03.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt04.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt04.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap">
+                                <a href="./img/cnt05.jpg" class="elm-photo photo-cover" data-swipebox="gal">
+                                    <img src="./img/cnt05.jpg" alt="">
+                                </a>
+                            </div>
+                            <!--/sl-wrap-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/route-box-->
+
+            <!--tiles-rk-box-->
+            <div class="tiles-rk-box">
+                <div class="title-box title-center">
+                    <h2 class="h1-title">Реквизиты компании</h2>
+                </div>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-rk">
+                            <p>Общество с ограниченной ответственностью «Арбат-тур»Юридический: <br>
+                                119002, г. Москва, Троилинский пер., д.3, комн.13 <br>
+                                Фактический и почтовый адрес: 119002, г. Москва, Троилинский пер., д.3, офис 408 <br>
+                                ИНН 7718990029 <br>
+                                КПП 770401001 <br>
+                                ОГРН 1147746821496</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-rk">
+                            <p><b>Банковские реквизиты:</b></p>
+                            <p>Банк: ФИЛИАЛ "ЦЕНТРАЛЬНЫЙ" БАНКА ВТБ (ПАО), г. МОСКВА</p>
+                            <p>Расчетный счет: 40702810301040000516</p>
+                            <p>Корр. счет: 30101810145250000411</p>
+                            <p>БИК: 044525411</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="more-box">
+                    <a href="" class="btn button-border">Развернуть еще</a>
+                </div>
+            </div>
+            <!--/tiles-rk-box-->
+
+
+        </div>
+        <!-- /page -->
+
+        <!--main-question-box-->
+        <div class="main-question-box cnt-section">
+            <div class="inner-wrap">
+                <div class="box-inner-wrap">
+                    <div class="title-inner-wrap">
+                        <div class="question-title">Возникли вопросы?</div>
+                    </div>
+                    <div class="soc-inner-wrap">
+                        <div class="question-subtitle">пишите</div>
+                        <div class="soc-wrap">
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-tg.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-wa.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="phones-inner-wrap">
+                        <div class="question-subtitle">звоните</div>
+                        <div class="phone-wrap">
+                            <a href="tel:84953749465" class="link-phone">+7(495) 374-94-65</a>
+                        </div>
+                        <div class="phone-wrap">
+                            <a href="tel:84957711028" class="link-phone">+7(495) 771-10-28</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--/main-question-box-->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <!--footer-main-panel-->
+            <div class="footer-main-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <span class="logo-title">Арбат-Тур</span>
+                            <span class="logo-text">туристическая компания</span>
+                        </a>
+                    </div>
+                    <div class="contacts-wrap">
+                        <div class="location-wrap">
+                            <div class="footer-info">
+                                <div class="elm-ico">
+                                    <img src="./img/icons/point.svg" alt="">
+                                </div>
+                                <div class="info-title">г.&nbsp;Москва, <br> Троилинский переулок д.3, офис&nbsp;408</div>
+                            </div>
+                        </div>
+                        <div class="phones-wrap">
+                            <div class="phone-wrap phone-mobile">
+                                <a href="tel:84953749465" class="footer-info link-phone">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/phone.svg" alt="">
+                                    </div>
+                                    <div class="info-title">+7(495) <b>374-94-65</b></div>
+                                </a>
+                            </div>
+                            <div class="phone-wrap">
+                                <a href="tel:84957711028" class="footer-info link-phone">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/phone.svg" alt="">
+                                    </div>
+                                    <div class="info-title">+7(495) <b>771-10-28</b></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="email-wrap">
+                            <a href="mailto:arbattur@yandex.ru" class="footer-info link-email">
+                                <div class="elm-ico">
+                                    <img src="./img/icons/mail.svg" alt="">
+                                </div>
+                                <div class="info-title">arbattur@yandex.ru</div>
+                            </a>
+                        </div>
+                        <div class="soc-wrap">
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-wa.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-tg.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-wrap">
+                        <ul class="menu">
+                            <li><a href="">Автобусные туры</a></li>
+                            <li><a href="">Золотое кольцо</a></li>
+                            <li><a href="">Байкал</a></li>
+                            <li><a href="">Адыгея</a></li>
+                        </ul>
+                    </div>
+                    <div class="info-wrap">
+                        <p>Общество с ограниченной ответственностью «Арбат-тур» <br>Юридический: 119002, г. Москва, Троилинский пер., д.3, комн.13 <br>Фактический и почтовый адрес: 119002, г. Москва, Троилинский пер., д.3, офис 408 <br>ИНН 7718990029 <br>КПП 770401001 <br>ОГРН 1147746821496</p>
+                    </div>
+                </div>
+            </div>
+            <!--/footer-main-panel-->
+            <!--footer-bottom-panel-->
+            <div class="footer-bottom-panel cnt-section">
+                <div class="inner-wrap">
+                    <p>© 2010 - 2023 Туристическая компания «Арбат-Тур». Все права защищены.</p>
+                </div>
+            </div>
+            <!--/footer-bottom-panel-->
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /wrap -->
+
+
+
+</body>
+
+</html>
