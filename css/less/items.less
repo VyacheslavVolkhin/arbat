@@ -382,6 +382,10 @@
     background: #fff;
     backdrop-filter: blur(2px);
     border: 1px solid #fff;
+    transition: border-color ease 0.2s;
+    &:hover {
+        border-color: var(--clr-link);
+    }
     &:before {
         content: "";
         display: block;

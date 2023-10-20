@@ -20,10 +20,12 @@
     .map-inner-wrap {
         position: relative;
         overflow: hidden;
-        height: 315px;
         margin-left: calc(var(--paddingContainer) * -1);
         margin-right: calc(var(--paddingContainer) * -1);
         margin-bottom: 30px;
+        .elm-photo {
+            aspect-ratio: 375/315;
+        }
     }
     .info-inner-wrap {
         margin-bottom: 30px;
@@ -534,16 +536,63 @@
     }
     .photo-inner-wrap {
         display: block;
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: -40px;
+        margin-right: -40px;
+        margin-bottom: 30px;
     }
-    .elm-photo {
+    .photo-inner {
+        position: relative;
         max-width: 500px;
         margin: 0 auto;
     }
     .page-title {
         margin-bottom: 16px;
         text-transform: uppercase;
+    }
+    .photo-title {
+        display: inline-block;
+        background: #fff;
+        padding: 10px 15px;
+        border-radius: 16px;
+        box-shadow: 0px 8px 16px 0px rgba(96, 97, 112, 0.16), 0px 2px 4px 0px rgba(40, 41, 61, 0.04);
+        white-space: nowrap;
+        max-width: 100%;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: bold;
+        color: var(--clr-base);
+        text-overflow: ellipsis;
+        position: absolute;
+        transition: all ease 0.2s;
+        z-index: 2;
+        span {
+            display: inline;
+            border-bottom: 1px solid;
+        }
+        &:hover {
+            color: var(--clr-link);
+        }
+    }
+    .title01 {
+        top: 2%;
+        left: 11%;
+    }
+    .title02 {
+        top: 18%;
+        right: 10%;
+    }
+    .title03 {
+        top: 33%;
+        left: 15%;
+    }
+    .title04 {
+        top: 72%;
+        right: 10%;
+    }
+    .title05 {
+        top: 89%;
+        left: 10%;
     }
 }
 .wrap-main {
@@ -827,7 +876,7 @@
     }
     .main-top-box {
         padding-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 30px;
         text-align: left;
         .box-inner-wrap {
             display: flex;
@@ -844,7 +893,7 @@
             margin: 0;
             flex: 1;
         }
-        .elm-photo {
+        .photo-inner {
             max-width: inherit;
             margin: 0 -15px 0 0;
         }
@@ -916,6 +965,9 @@
             height: auto;
             border-radius: 10px;
             margin: 0;
+            .elm-photo {
+                aspect-ratio: 811/682;
+            }
         }
         .slick-list {
             overflow: hidden;
@@ -1101,6 +1153,35 @@
     .main-top-box {
         font-size: 16px;
         line-height: (26/16);
+        margin-bottom: 0;
+        .photo-title {
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            font-size: 14px;
+            padding: 15px 3rem;
+        }
+        .title01 {
+            top: 26%;
+            right: 2%;
+        }
+        .title02 {
+            top: 84%;
+            right: 10%;
+        }
+        .title03 {
+            top: 53%;
+            left: 3%;
+        }
+        .title04 {
+            top: 14%;
+            left: 12%;
+        }
+        .title05 {
+            top: 80%;
+            left: 15%;
+        }
     }
     .wrap-main {
         .main-filter-box {
@@ -1125,6 +1206,13 @@
     }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
+    .main-top-box {
+        .photo-title {
+            font-size: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
     .info-top-box {
         .photo-inner-wrap {
             width: 50rem;

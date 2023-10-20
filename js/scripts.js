@@ -110,6 +110,18 @@ popupElements.forEach(element => {
 
 $(document).ready(function () {
 
+
+	if (!!$('.header').offset()) {
+		$(window).scroll(function () {
+			var windowTop = $(window).scrollTop();
+			if (windowTop>56) {
+				$('.wrap').addClass('header-fixed');
+			} else {
+				$('.wrap').removeClass('header-fixed');
+			}
+		});
+	}
+
 	//swipebox
 	if (!!$('[data-swipebox]').offset()) {
 		$('[data-swipebox]').swipebox();
