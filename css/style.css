@@ -2805,6 +2805,12 @@ body {
       flex-shrink: 0;
   margin: 0 5px;
 }
+.main-question-box .button-soc .button-title {
+  display: none;
+}
+.main-question-box .title-span {
+  display: none;
+}
 .main-question-box a {
   color: #fff;
 }
@@ -2888,9 +2894,75 @@ body {
   .main-question-box {
     margin-bottom: 7.4rem;
   }
+  .main-question-box .right-inner-wrap {
+    -ms-flex: 1;
+        flex: 1;
+  }
+  .main-question-box .right-inner-wrap .soc-inner-wrap {
+    width: 100%;
+    padding: 0;
+  }
+  .main-question-box .right-inner-wrap .phones-inner-wrap {
+    width: 100%;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-question-box .right-inner-wrap .phones-inner-wrap .question-subtitle {
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .main-question-box .right-inner-wrap .phones-inner-wrap .phone-wrap {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    margin: 0;
+    padding: 0 10px;
+    font-size: 2rem;
+  }
+  .main-question-box .right-inner-wrap .phones-inner-wrap:before {
+    display: none;
+  }
+  .main-question-box .right-inner-wrap .soc-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .main-question-box .right-inner-wrap .question-subtitle {
+    font-size: 2rem;
+  }
+  .main-question-box .right-inner-wrap .btn-action-ico.button-soc {
+    margin: 0 1rem;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    -ms-flex-align: center;
+        align-items: center;
+    white-space: nowrap;
+    padding: 0 0 0 58px;
+    height: 48px;
+  }
+  .main-question-box .right-inner-wrap .btn-action-ico.button-soc .button-title {
+    display: block;
+    font-size: 2rem;
+  }
+  .main-question-box .right-inner-wrap .btn-action-ico.button-soc img,
+  .main-question-box .right-inner-wrap .btn-action-ico.button-soc svg {
+    right: auto;
+    width: 48px;
+  }
   .main-question-box .box-inner-wrap {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     border-radius: 1.5rem;
     padding: 2.7rem 17.5rem;
     max-width: 1230px;
@@ -2909,7 +2981,7 @@ body {
   }
   .main-question-box .title-inner-wrap:before {
     content: "";
-    display: block;
+    display: none;
     width: 15px;
     height: 15px;
     position: absolute;
@@ -2963,6 +3035,9 @@ body {
   }
   .main-question-box .question-subtitle {
     margin-bottom: 5px;
+  }
+  .main-question-box .title-span {
+    display: inline;
   }
   .main-question-box .soc-wrap {
     -ms-flex-direction: column-reverse;
@@ -3333,6 +3408,11 @@ body {
   }
   .info-top-box .info-inner-wrap {
     max-width: calc(100% - 50rem);
+  }
+}
+@media (min-width: 1200px) {
+  .main-question-box .right-inner-wrap {
+    max-width: 40rem;
   }
 }
 @media (min-width: 1400px) {
