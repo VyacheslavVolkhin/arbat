@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/jquery.maskedinput.min.js" defer></script>
     <script src="./js/slick.min.js" defer></script>
     <script src="./js/jquery.swipebox.min.js" defer></script>
     <script src="./js/scripts.js" defer></script>
@@ -140,6 +141,8 @@
                 <li><a href="tours.html">Tours</a></li>
                 <li><a href="tour.html">Tour</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
+                <li>----</li>
+                <li><a href="" class="js-popup-open" data-popup="popup-callback">Popup</a></li>
             </ul>
             <br><br><br><br><br>
         </div>
@@ -224,6 +227,39 @@
             <!--/footer-bottom-panel-->
         </footer>
         <!-- /footer -->
+
+
+        <div class="popup-outer-box" id="popup-callback">
+            <div class="popup-box">
+                <a href="" class="btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Заказать звонок</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, harum!</p>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" placeholder="Ваше имя" class="form-input">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="tel" placeholder="Ваш телефон" class="form-input">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-info">
+                                Нажимая на кнопку «Зарегистрироваться», вы соглашаетесь с <a href="" class="link-main">политикой конфиденциальности</a> <a href="" class="link-main">пользовательским соглашением</a>
+                            </div>
+                            <div class="frm-field field-button">
+                                <button type="submit" class="btn">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
 
     </div>
     <!-- /wrap -->

@@ -110,6 +110,26 @@ popupElements.forEach(element => {
 
 $(document).ready(function () {
 
+	//phone masked
+	$('input[type="tel"]').mask("+7 (999) 999-99-99",{placeholder:"+7 (___) ___-__-__"});
+	$('input[type="tel"]').on('click', function() {
+		$(this).setCursorPosition(4);
+	})
+	$.fn.setCursorPosition = function(pos) {
+		this.each(function(index, elem) {
+			if (elem.setSelectionRange) {
+				elem.setSelectionRange(pos, pos);
+			} else if (elem.createTextRange) {
+				var range = elem.createTextRange();
+				range.collapse(true);
+				range.moveEnd('character', pos);
+				range.moveStart('character', pos);
+				range.select();
+			}
+		});
+		return this;
+	};
+
 
 	if (!!$('.header').offset()) {
 		$(window).scroll(function () {
@@ -189,4 +209,28 @@ $(document).ready(function () {
 		});
 
 	}
+
+
+	//popups
+	let popupCurrent;
+	$('.js-popup-open').on('click', function () {
+		$('.popup-outer-box').removeClass('active');
+		$('body').addClass('popup-open');
+		popupCurrent = $(this).attr('data-popup');
+		$('.popup-outer-box[id="' + popupCurrent + '"]').addClass('active');
+		return false;
+	})
+	$('.js-popup-close').on('click', function () {
+		$('body').removeClass('popup-open');
+		$('.popup-outer-box').removeClass('active');
+		return false;
+	})
+	$('.popup-outer-box').on('click', function (event) {
+		if (!event.target.closest('.popup-box')) {
+			$('body').removeClass('popup-open');
+			$('body').removeClass('popup-open-scroll');
+			$('.popup-outer-box').removeClass('active');
+			return false;
+		}
+	})
 });

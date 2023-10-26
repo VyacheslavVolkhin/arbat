@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
     <script src="./js/jquery.min.js" defer></script>
+    <script src="./js/jquery.maskedinput.min.js" defer></script>
     <script src="./js/slick.min.js" defer></script>
     <script src="./js/jquery.swipebox.min.js" defer></script>
     <script src="./js/scripts.js" defer></script>
@@ -157,14 +158,14 @@
                         </div>
                         <div class="frm-field field-main">
                             <div class="frm-field-title">Выберите город </div>
-                            <select class="form-input">
-                                <option>Санкт-Петербург</option>
-                                <option>Санкт-Петербург</option>
-                                <option>Санкт-Петербург</option>
-                                <option>Санкт-Петербург</option>
-                                <option>Санкт-Петербург</option>
-                                <option>Санкт-Петербург</option>
-                            </select>
+                            <input list="brow" type="text" class="form-input form-input-select" placeholder="Выберите город">
+                            <datalist id="brow">
+                                <option value="Санкт-Петербург">
+                                <option value="Санкт-Петербург">
+                                <option value="Санкт-Петербург">
+                                <option value="Волгоград">
+                                <option value="Москва">
+                            </datalist>
                         </div>
                         <div class="frm-field field-button">
                             <button type="submit" class="btn">
@@ -249,7 +250,7 @@
                             </div>
                         </div>
                         <div class="info-action-wrap">
-                            <a href="" class="btn">
+                            <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                 <span class="button-title">Забронировать тур</span>
                                 <span class="button-ico">
                                     <img src="./img/icons/arrow-button.svg" alt="">
@@ -349,7 +350,7 @@
                             </div>
                             <div class="tile-info-attention">19-00 Ужин</div>
                             <div class="tile-info-action">
-                                <a href="" class="btn">
+                                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                     <span class="button-title">Забронировать тур</span>
                                     <span class="button-ico">
                                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -401,7 +402,7 @@
                             </div>
                             <div class="tile-info-attention">20-00 Ужин в ресторане гостиницы.</div>
                             <div class="tile-info-action">
-                                <a href="" class="btn">
+                                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                     <span class="button-title">Забронировать тур</span>
                                     <span class="button-ico">
                                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -461,7 +462,7 @@
                             </div>
                             <div class="tile-info-attention">20-00 Возвращение в гостиницу. <br>Ужин в ресторане гостиницы.</div>
                             <div class="tile-info-action">
-                                <a href="" class="btn">
+                                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                     <span class="button-title">Забронировать тур</span>
                                     <span class="button-ico">
                                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -521,7 +522,7 @@
                             </div>
                             <div class="tile-info-attention">20-00 Возвращение в гостиницу. <br>Ужин в ресторане гостиницы.</div>
                             <div class="tile-info-action">
-                                <a href="" class="btn">
+                                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                     <span class="button-title">Забронировать тур</span>
                                     <span class="button-ico">
                                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -581,7 +582,7 @@
                             </div>
                             <div class="tile-info-attention">20-00 Возвращение в гостиницу. <br>Ужин в ресторане гостиницы.</div>
                             <div class="tile-info-action">
-                                <a href="" class="btn">
+                                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                     <span class="button-title">Забронировать тур</span>
                                     <span class="button-ico">
                                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -641,7 +642,7 @@
                             </div>
                             <div class="tile-info-attention">20-00 Возвращение в гостиницу. <br>Ужин в ресторане гостиницы.</div>
                             <div class="tile-info-action">
-                                <a href="" class="btn">
+                                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                     <span class="button-title">Забронировать тур</span>
                                     <span class="button-ico">
                                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -701,7 +702,7 @@
                             </div>
                             <div class="tile-info-attention">20-00 Возвращение в гостиницу. <br>Ужин в ресторане гостиницы.</div>
                             <div class="tile-info-action">
-                                <a href="" class="btn">
+                                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                     <span class="button-title">Забронировать тур</span>
                                     <span class="button-ico">
                                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -889,10 +890,9 @@
                 </div>
             </div>
             <!--/form-box-->
-
             <!--more-box-->
             <div class="more-box">
-                <a href="" class="btn">
+                <a href="" class="btn js-popup-open" data-popup="popup-callback">
                     <span class="button-title">Забронировать тур</span>
                     <span class="button-ico">
                         <img src="./img/icons/arrow-button.svg" alt="">
@@ -1038,7 +1038,7 @@
                                         <a href="" class="btn button-border">Подробнее</a>
                                     </div>
                                     <div class="tile-action">
-                                        <a href="" class="btn">
+                                        <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                             <span class="button-title">Заказать тур</span>
                                             <span class="button-ico">
                                                 <img src="./img/icons/arrow-button.svg" alt="">
@@ -1181,7 +1181,7 @@
                                         <a href="" class="btn button-border">Подробнее</a>
                                     </div>
                                     <div class="tile-action">
-                                        <a href="" class="btn">
+                                        <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                             <span class="button-title">Заказать тур</span>
                                             <span class="button-ico">
                                                 <img src="./img/icons/arrow-button.svg" alt="">
@@ -1324,7 +1324,7 @@
                                         <a href="" class="btn button-border">Подробнее</a>
                                     </div>
                                     <div class="tile-action">
-                                        <a href="" class="btn">
+                                        <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                             <span class="button-title">Заказать тур</span>
                                             <span class="button-ico">
                                                 <img src="./img/icons/arrow-button.svg" alt="">
@@ -1467,7 +1467,7 @@
                                         <a href="" class="btn button-border">Подробнее</a>
                                     </div>
                                     <div class="tile-action">
-                                        <a href="" class="btn">
+                                        <a href="" class="btn js-popup-open" data-popup="popup-callback">
                                             <span class="button-title">Заказать тур</span>
                                             <span class="button-ico">
                                                 <img src="./img/icons/arrow-button.svg" alt="">
@@ -1501,11 +1501,11 @@
                             <div class="question-subtitle">Пишите <span class="title-span">и звоните в соцсети</span></div>
                             <div class="soc-wrap">
                                 <a href="" class="btn-action-ico button-soc">
-                                    <img src="./img/icons/soc-tg.svg" alt="">
+                                    <img src="./img/icons/soc-wa.svg" alt="">
                                     <span class="button-title">Whatsapp</span>
                                 </a>
                                 <a href="" class="btn-action-ico button-soc">
-                                    <img src="./img/icons/soc-wa.svg" alt="">
+                                    <img src="./img/icons/soc-tg.svg" alt="">
                                     <span class="button-title">Telegram</span>
                                 </a>
                             </div>
@@ -1603,6 +1603,39 @@
             <!--/footer-bottom-panel-->
         </footer>
         <!-- /footer -->
+
+
+        <div class="popup-outer-box" id="popup-callback">
+            <div class="popup-box">
+                <a href="" class="btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Заказать звонок</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, harum!</p>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" placeholder="Ваше имя" class="form-input">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="tel" placeholder="Ваш телефон" class="form-input">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-info">
+                                Нажимая на кнопку «Зарегистрироваться», вы соглашаетесь с <a href="" class="link-main">политикой конфиденциальности</a> <a href="" class="link-main">пользовательским соглашением</a>
+                            </div>
+                            <div class="frm-field field-button">
+                                <button type="submit" class="btn">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
 
     </div>
     <!-- /wrap -->

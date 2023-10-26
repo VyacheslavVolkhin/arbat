@@ -23,7 +23,22 @@
         &[placeholder]::-moz-placeholder {color: var(--clr-base);}
         &[placeholder]:-ms-input-placeholder {color: var(--clr-base);}
     }
+    &.form-input-select {
+        //background-image: url(../img/icons/arrow-select.svg);
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+        background-size: 18px auto;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        &:hover, &:focus {
+            background-image: none;
+        }
+    }
 }
+[placeholder]::-webkit-input-placeholder {font-weight: 400;}
+[placeholder]:-moz-placeholder {font-weight: 400;}
+[placeholder]::-moz-placeholder {font-weight: 400;}
+[placeholder]:-ms-input-placeholder {font-weight: 400;}
 textarea.form-input {
     &.form-input-main {
         height: 100px;
@@ -76,12 +91,9 @@ select.form-input {
 select::-ms-expand {
     display: none;
 }
-//   <select class="form-input form-input-line" required>
-//       <option value="" disabled selected hidden>Выбрать</option>
-//       <option>Пункт списка</option>
-//   </select>
 select.form-input:required:invalid {
     color: var(--clr-base);
+    font-weight: 400;
 }
 .btn {
     height: 40px;
