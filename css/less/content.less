@@ -375,6 +375,22 @@ body.popup-open {
         .elm-photo {
             max-width: 400px;
             margin: 0 auto;
+            border-radius: 50%;
+            img {
+                margin: 0 auto;
+            }
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: -2px;
+                bottom: -2px;
+                left: -2px;
+                right: -2px;
+                z-index: 3;
+                background: url(../img/bg.svg) center no-repeat;
+                background-size: 100% 100%;
+            }
         }
     }
     .info-inner-wrap {
